@@ -11,3 +11,6 @@ Route::controller(ProductController::class)->group(function(){
 Route::post('/add','store')->name('save');
 Route::get('/','dash')->name('dashboard');
 });
+Route::get('/header',function(){
+    return view('header');
+});

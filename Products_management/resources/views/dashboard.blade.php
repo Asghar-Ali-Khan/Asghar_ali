@@ -1,8 +1,6 @@
 @include('header');
-<div class="con" style=" display: grid;
-grid-template-columns: repeat(8, 1fr); 
-gap:35px; 
-padding:60px;">
+<link rel="stylesheet" href="style.css">
+<div class="con">
 @foreach ($images as $img )
 <div class="card" style="width: 18rem;">
     <img src="images/{{$img->images}}" class="card-img-top" alt="...">

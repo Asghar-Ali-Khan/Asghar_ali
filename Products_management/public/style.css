@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    padding: 60px;
+    margin-left: 100px;
+    overflow: scroll;
+}
+@media only screen and (min-width: 700px) {
+    .con {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 35px;
+        padding: 60px;
+        overflow: scroll;
+    }
+}
